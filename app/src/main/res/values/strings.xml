@@ -6,4 +6,7 @@
     <string name="exit">退出登录</string>
     <string name="autoLogin">自动登录</string>
     <string name="forget_password">忘记密码?</string>
+    <string name="my_phone_member">我的联系人</string>
+    <string name="my_account">我的账户</string>
+    <string name="my_password">我的密码</string>
 </resources>
