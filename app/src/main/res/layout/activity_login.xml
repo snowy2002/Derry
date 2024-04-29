@@ -11,7 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/user"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_centerHorizontal="true"
         >
     </ImageView>
@@ -57,4 +57,27 @@
         >
 
     </Button>
+
+    <CheckBox
+        android:id="@+id/autoLogin"
+        android:layout_alignLeft="@id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/autoLogin">
+
+    </CheckBox>
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnLogin"
+        android:text="@string/forget_password"
+        android:layout_alignBaseline="@id/autoLogin"
+        android:layout_alignRight="@id/btnLogin"
+        >
+
+    </TextView>
 </RelativeLayout>

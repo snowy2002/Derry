@@ -3,10 +3,13 @@ package com.example.derry;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
+    private TextView forget_password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +57,10 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        forget_password = findViewById(R.id.forget_password);
+        forget_password.setText(Html.fromHtml("<a href=\"http://www.12306.cn\">忘记密码?</a>"));
+        forget_password.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
 }

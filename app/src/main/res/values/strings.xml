@@ -4,4 +4,6 @@
     <string name="password">请输入密码</string>
     <string name="login">登录</string>
     <string name="exit">退出登录</string>
+    <string name="autoLogin">自动登录</string>
+    <string name="forget_password">忘记密码?</string>
 </resources>
